@@ -1,11 +1,11 @@
-package src.context;
+package context;
 
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
-import src.string.BinaryStdOut;
+import string.BinaryStdOut;
 
 /**
  * This class provides methods for printing strings and numbers to standard

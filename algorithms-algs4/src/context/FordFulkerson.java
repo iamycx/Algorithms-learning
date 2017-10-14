@@ -1,4 +1,4 @@
-package src.context;
+package context;
 
 public class FordFulkerson {
 	private boolean[] marked;// 在剩余网络中是否存在从S到V的路径？

@@ -1,4 +1,4 @@
-package src.context;
+package context;
 
 public class CollisionSystem {
 

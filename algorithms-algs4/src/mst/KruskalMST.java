@@ -1,4 +1,4 @@
-package src.mst;
+package mst;
 //思路参考http://blog.csdn.net/luomingjun12315/article/details/47700237
 import java.util.Scanner;  
 import java.util.Arrays;  

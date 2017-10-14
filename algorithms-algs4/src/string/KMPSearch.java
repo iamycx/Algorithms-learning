@@ -1,7 +1,7 @@
 //参考http://www.cnblogs.com/linbingdong/p/6479537.html
 //http://blog.csdn.net/henuyx/article/details/44653799
 //http://www.cnblogs.com/tangzhengyue/p/4315393.html
-package src.string;
+package string;
 
 public class KMPSearch {
 

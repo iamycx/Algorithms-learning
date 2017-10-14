@@ -1,4 +1,4 @@
-package src.string;
+package string;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

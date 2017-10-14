@@ -1,4 +1,4 @@
-package src.string;
+package string;
 
 
 public class Huffman {

@@ -1,4 +1,4 @@
-package src.mst;
+package mst;
 // 参考http://blog.csdn.net/niushuai666/article/details/6791765
 // 参考http://blog.csdn.net/daijope/article/details/6781029
 public class BellmanFordSP {

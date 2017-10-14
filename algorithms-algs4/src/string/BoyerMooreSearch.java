@@ -1,5 +1,5 @@
 //参考算法第四版代码
-package src.string;
+package string;
 
 public class BoyerMooreSearch {
 	//注意此处right[]的构造

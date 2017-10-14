@@ -1,4 +1,4 @@
-package src.context;
+package context;
 
 public class FlowNetwork {
 	private static final String NEWLINE = System.getProperty("line.separator");

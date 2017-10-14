@@ -1,6 +1,6 @@
 //为什么一直得不到正确的结果？？
 
-package src.string;
+package string;
 
 import java.math.BigInteger;
 import java.util.Random;

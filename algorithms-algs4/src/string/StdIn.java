@@ -1,4 +1,4 @@
-package src.string;
+package string;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

@@ -1,5 +1,5 @@
 // 暴力查找字符串中的指定字符串
-package src.string;
+package string;
 
 public class ForceSearch {
 

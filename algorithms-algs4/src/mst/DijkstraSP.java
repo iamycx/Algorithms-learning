@@ -1,4 +1,4 @@
-package src.mst;
+package mst;
 // 参考http://blog.csdn.net/gloria0610/article/details/23742799
 
 public class DijkstraSP {
