@@ -1,0 +1,66 @@
+package lectures.linkedlist;
+/** 
+ * @author Yu
+ * @date 2017年8月30日
+ * 
+ * 有一个整数val，如何在节点值有序的环形链表中插入一个节点值为val的节点，并且保证这个环形单链表依然有序。
+ * 给定链表的信息，及元素的值A及对应的nxt指向的元素编号同时给定val，请构造出这个环形链表，并插入该值。
+ *
+ * 测试样例：
+ * [1,3,4,5,7],[1,2,3,4,0],2
+ * 返回：{1,2,3,4,5,7}
+ */
+public class InsertValue {
+	
+	public ListNode insert(int[] A,int[] nxt,int val) {
+		if(A==null||nxt==null){
+			ListNode node = new ListNode(val);
+			node.next = node;
+			return node;
+		}
+		
+		ListNode head = new ListNode(A[0]);
+		ListNode current = head;
+		for(int i=0;i<A.length-1;i++){
+			ListNode next = new ListNode(A[nxt[i]]);
+			current.next = next;
+			current = next;
+		}
+		current.next = head;
+		
+		ListNode pre = head;
+		ListNode after = head.next;
+		ListNode insert = new ListNode(val);
+		while(after != head ){
+			if(pre.val<val&&val<after.val){
+				pre.next = insert;
+				insert.next = after;
+				break;
+			}else {
+				pre = after;
+				after = after.next;
+			}
+		}
+		if(after==head){
+			pre.next = insert;
+			insert.next = head;
+			if(val<after.val)
+				head = insert;
+		}
+		return head;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InsertValue iv = new InsertValue();
+        int[] a = {1, 3, 4, 5, 7};
+        int[] next = {1, 2, 3, 4, 0};
+        ListNode head = iv.insert(a, next, 2);
+        ListNode current = head;
+        do {
+            System.out.println(current.val);
+            current = current.next;
+        } while (current != head);
+	}
+
+}
